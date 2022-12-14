@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #696969;
-    --secondary-color:  #7803b7;
-    --tertiary-color:  #00ffae ;
+    --primary-color: #2a6f6f;
+    --secondary-color:  #11228f;
+    --tertiary-color:  #d9ff00 ;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
     height: 575px;
     width: 350px;
     margin: 100px auto;
-    background-color: rgb(245, 208, 182);
+    background-color: rgba(248, 219, 198, 0.774);
     box-shadow: 2px 2px var(--secondary-color);
     border-radius: 18px;
 }
@@ -66,4 +66,9 @@ body {
     font-size: 15px;
     color: beige;
 }
-    
+
+#totalTip {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 18px;
+}

@@ -14,37 +14,42 @@
             <h1 class="title">Calculadora de Gorjetas</h1>
         </div>
         <div>
-            <form class="tipsForm">
+            <form class="tipsForm" id="tipsForm">
     
                 <label for="bill">
                     <p>Quanto ficou a conta?</p>
                 </label>
                 <p>
-                    R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput">
+                    R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required>
                 </p>
                 <label for="Service">
                     <p>Qualidade do Serviço</p>
                 </label>
                 <p>
-                    <select name="Sevrice" id="Service" class="formSelect">
+                    <select name="Sevrice" id="Service" class="formSelect" required>
                         <option disabled selected value="0.0">Escolha uma opção</option>
                         <option value="0.20">20 % - Impecável</option>
                         <option value="0.18">18 % - Excelente</option>
                         <option value="0.15">15 % - Bom</option>
                         <option value="0.10">10 % - Rasoável</option>
-                        <option value="0.0">00 % - Ruim</option>
+                        <option value="0.0">0 % - Ruim</option>
                     </select>
                 </p>
                 <label for="People">
                     <p>Quantas pessoas vão pagar a conta?</p>
                 </label>
                 <p>
-                    <input type="number" placeholder="" name="People" id="People" class="formInput"> Pessoa(s)
+                    <input type="number" placeholder="" name="People" id="People" class="formInput" required> Pessoa(s)
                 </p>
                 <button type="submit" class="formSubmit">Calcular</button>
             </form>
         </div>
+        <div id="totalTip">
+            Valor da Gorjeta:
+            R$ <span id="tip">0.00</span>
+            <spam id="each">cada</spam>
+        </div>
     </div>
-</script>
+<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
